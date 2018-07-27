@@ -1,8 +1,12 @@
-let app = require('express')();
+let express = require('express');
+let app = express();
 let http = require('http').Server(app);
 let io = require('socket.io')(http);
 
+app.use('/public', express.static('public'));
+
 app.get('/', function(req, res){
+    //res.writeHead(200, {"Content-Type": "text/plain"});
     res.sendFile(__dirname + '/index.html');
 });
 
