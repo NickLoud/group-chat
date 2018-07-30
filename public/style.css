@@ -5,7 +5,7 @@
 }
 
 body,html {
-    font: 13px Helvetica, Arial;
+    font: 18px Helvetica, Arial;
     height:100%;
 }
 
@@ -41,17 +41,31 @@ form {
 }
 
 .main__messages {
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
-.main__messages li {
-    padding: 5px 10px;
+.message {
+    width: 100%;
+    height: auto;
+    padding: 3px 5px 0 5px;
 }
 
-.main__messages li:nth-child(odd) {
+.messageContent {
+    padding: 5px 5px;
+    background: gray;
+    float: right;
+    max-width: 45%;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.messageContent.myMessage {
     background: #eee;
+    float: left;
 }
 
 .main{
@@ -64,4 +78,13 @@ form {
     width:15%;
     border-right: 1px solid black;
     height:100%;
+    padding: 5px 0 0 10px;
+}
+
+.main__li{
+    list-style-type: none;
+    margin-top: 5px;
+}
+.main__messagesColumn{
+    width:85%;
 }
