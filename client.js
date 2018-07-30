@@ -17,4 +17,3 @@ import io from 'socket.io-client'
         messages.appendChild(li);
     });
 })();
-

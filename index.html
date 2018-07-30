@@ -5,12 +5,17 @@
     <link href="public/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<ul id="messages"></ul>
-<form action="" id="form">
-    <input id="nickname">
-    <input id="message" autocomplete="off"/>
-    <button>Send</button>
-</form>
+<div class="main">
+    <ul class="main__channels"></ul>
+    <div class="main__messagesColumn">
+        <ul class="main__messages"></ul>
+        <form action="" class="main__form">
+            <input class="main__nickname">
+            <input class="main__message" autocomplete="off"/>
+            <button class="main__button">Send</button>
+        </form>
+    </div>
+</div>
 <script src="public/bundle.js"></script>
 </body>
 </html>

@@ -6,7 +6,6 @@ let io = require('socket.io')(http);
 app.use('/public', express.static('public'));
 
 app.get('/', (req, res) => {
-    //res.writeHead(200, {"Content-Type": "text/plain"});
     res.sendFile(__dirname + '/index.html');
 });
 
