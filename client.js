@@ -18,7 +18,6 @@ import io from 'socket.io-client'
     form.onsubmit = () => {
         socket.emit('chat message', nick, message.value);
         message.value = "";
-        debugger;
         return false;
     };
 

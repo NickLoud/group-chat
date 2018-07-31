@@ -54,6 +54,7 @@ body,html {
     max-width: 45%;
     overflow: hidden;
     border-radius: 7px;
+    word-wrap: break-word;
 }
 
 .messageContent.myMessage {
